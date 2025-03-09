@@ -41,7 +41,6 @@ ul {
 ul,
 ol {
   margin-left: 8px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,7 +54,7 @@ ol li {
   font-family: var(--font-outfit);
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 150%;
   margin: 8px 0;
 }
 li span,
@@ -167,3 +166,17 @@ section h2 {
   justify-content: center;
 }
 /* Instructions */
+.instructions ol {
+  padding-left: 8px;
+}
+.instructions ol li {
+  padding-left: 16px;
+  margin-left: 8px;
+}
+.instructions ol li strong {
+  margin-left: 0;
+}
+.instructions ol li::marker {
+  padding-left: 8px;
+}
+/* Nutrition */
