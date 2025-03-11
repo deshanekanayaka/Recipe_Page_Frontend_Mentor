@@ -9,7 +9,7 @@
 :root {
   --white: hsl(0, 0%, 100%);
   --stone-100: hsl(30, 54%, 90%);
-  --stone-150: hsl(30, 18%, 87%);
+  --stone-150: hsla(30, 18%, 87%, 1);
   --stone-600: hsl(30, 10%, 34%);
   --stone-700: hsla(30, 11%, 34%, 1);
   --stone-900: hsl(24, 5%, 18%);
@@ -76,7 +76,7 @@ img {
   max-width: 100%;
 }
 section {
-  margin: 32px 0;
+  margin: 32px 0px;
 }
 section h2 {
   font-family: var(--font-young-serif);
@@ -111,7 +111,7 @@ section h2 {
 }
 
 .title {
-  margin-top: 30px;
+  margin-top: 40px;
   font-family: var(--font-young-serif);
   color: var(--stone-900);
   font-size: 40px;
@@ -123,7 +123,7 @@ section h2 {
   margin-top: 24px;
   font-size: 16px;
   line-height: 24px;
-  color: var(--stone-600);
+  color: var(--stone-700);
   font-family: var(--font-outfit);
 }
 /* Preparation */
@@ -155,7 +155,8 @@ section h2 {
 /* Ingredients */
 
 .ingredients h2,
-.instructions h2 {
+.instructions h2,
+.nutrition h2 {
   color: var(--brown-800);
 }
 .ingredients ul {
@@ -165,11 +166,19 @@ section h2 {
   display: flex;
   justify-content: center;
 }
+
+hr {
+  margin-top: 32px;
+  color: var(--stone-150);
+}
 /* Instructions */
+
 .instructions ol {
-  padding-left: 8px;
+  margin-left: 8px;
+  margin-top: 24px;
 }
 .instructions ol li {
+  margin-top: 0px;
   padding-left: 16px;
   margin-left: 8px;
 }
@@ -181,8 +190,44 @@ section h2 {
 }
 /* Nutrition */
 .nutrition p {
-  margin: 24px 0;
+  margin: 24px 0px;
   color: var(--stone-700);
   font-family: var(--font-outfit);
 }
 /* Table */
+
+tr td {
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--stone-150);
+  width: 288px;
+  height: 24px;
+}
+
+.nutrition-name {
+  font-family: var(--font-outfit);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--stone-700);
+  padding-top: 12px;
+  padding-left: 32px;
+  text-align: left;
+}
+.value {
+  padding-top: 12px;
+  padding-right: 32px;
+  padding-left: 16px;
+  font-family: var(--font-outfit);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--brown-800);
+  text-align: start;
+}
+.calories {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.fat {
+  border-bottom: none;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
