@@ -180,3 +180,9 @@ section h2 {
   padding-left: 8px;
 }
 /* Nutrition */
+.nutrition p {
+  margin: 24px 0;
+  color: var(--stone-700);
+  font-family: var(--font-outfit);
+}
+/* Table */
